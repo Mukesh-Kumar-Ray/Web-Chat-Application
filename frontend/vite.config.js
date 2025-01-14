@@ -8,9 +8,15 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api": {
-        target: "http://localhost:4001",
+        //changes made 
+        target: "https://web-chat-api-three.vercel.app",
         changeOrigin: true,
       },
+    },
+  },
+  resolve: {
+    alias: {
+      'react-icons': 'node_modules/react-icons',
     },
   },
 })
