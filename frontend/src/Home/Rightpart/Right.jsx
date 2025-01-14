@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Chatuser from "./Chatuser.jsx";
 import Messages from "./Messages.jsx";
 import Typesend from "./Typesend.jsx";
-import { CiMenuFries } from "react-icons/ci";
 import { useAuth } from "../../context/AuthProvider.jsx";
 import useConversation from "../../../zustand/useConversation.js";
 
