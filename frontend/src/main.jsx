@@ -8,9 +8,9 @@ import { SocketProvider } from "./Context/SocketContext.jsx";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <AuthProvider>
-      <SocketProvider>
-        <App />
-      </SocketProvider>
+        <SocketProvider>
+          <App />
+        </SocketProvider>
     </AuthProvider>
   </BrowserRouter>
 );

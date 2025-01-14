@@ -3,8 +3,8 @@ import React from "react";
 function Message({ message }) {
   //console.log(message);
   const authUser = JSON.parse(localStorage.getItem("ChatApp"));
-  console.log(authUser);
-  const itsMe = message.senderId === authUser.user.id;
+  //console.log(authUser);
+  const itsMe = message.senderId === authUser.user._id;
   //console.log(itsMe);
   const messageClasses = itsMe
     ? "ml-auto bg-green-100 rounded-tl-xl rounded-tr-xl rounded-bl-xl" // Sender message

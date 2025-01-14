@@ -16,7 +16,13 @@ dotenv.config();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
+app.use(cors(
+  {
+    origin:[],
+    methods: ["POST","GET"],
+    credentials:true
+  }
+));
   
 
 const port = process.env.PORT;
